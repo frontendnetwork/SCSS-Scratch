@@ -1,0 +1,238 @@
+/* ==========================================================================
+   BASE STYLES
+   ========================================================================== */
+
+/* (de) Schriftgrößen Umrechnung Ausgang: Desktop 16 Pixel 16/16 target/content=result http://pxtoem.com/ */
+/* {font-size:34px;font-size:2.125rem;}    /* 34px */
+/* {font-size:32px;font-size:2.0rem;}      /* 32px */
+/* {font-size:30px;font-size:1.875rem;}    /* 30px */
+/* {font-size:28px;font-size:1.75rem;}     /* 28px */
+/* {font-size:26px;font-size:1.625rem;}    /* 26px */
+/* {font-size:24px;font-size:1.5rem;}      /* 24px */
+/* {font-size:22px;font-size:1.375rem;}    /* 22px */
+/* {font-size:20px;font-size:1.25rem;}     /* 20px */
+/* {font-size:19px;font-size:1.1875rem;}   /* 19px */
+/* {font-size:18px;font-size:1.125rem;}    /* 18px */
+/* {font-size:17px;font-size:1.0625rem;}   /* 17px */
+/* {font-size:16px;font-size:1.0rem;}      /* 16px */
+/* {font-size:15px;font-size:0.9375rem;}   /* 15px */
+/* {font-size:14px;font-size:0.875rem;}    /* 14px */
+/* {font-size:13px;font-size:0.8125rem;}   /* 13px */
+/* {font-size:12px;font-size:0.75rem;}     /* 12px */
+/* {font-size:11px;font-size:0.6875rem;}   /* 11px */
+/* {font-size:10px;font-size:0.625rem;}    /* 10px */
+/* background:#fff url("/img/bg/bg_xxxx.gif") repeat-x top center; */
+
+
+
+html,
+body,
+button,
+input,
+select,
+textarea,
+label
+{
+    color: #333;
+    font-family: 'Cabin', sans-serif;
+    @include font-size(14px);
+    /* http://usw-usf.de/css/formulare-box-model-und-css3/
+    siehe html
+    box-sizing: border-box;-moz-box-sizing: border-box;-webkit-box-sizing: border-box;
+    */
+}
+
+body {
+    background:#333134;
+}
+
+
+html
+{
+    /* http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+    box-sizing: border-box;
+    overflow-y: scroll;
+    font-size: 100%; /* default 16px */
+    line-height: 1.4;
+}
+
+*, *:before, *:after
+{
+  box-sizing: inherit;
+}
+
+a
+{
+    color: #00589C;
+    @include font-size(14px);
+    text-decoration: none;
+}
+
+a:visited
+{
+    color: #00589C;
+}
+
+a:hover
+{
+    color: #00589C;
+    text-decoration:underline;
+}
+/* a:focus { outline: 0; } */
+
+p
+{
+    @include font-size(14px);
+    margin:0 0 15px 0;
+}
+
+dl,
+menu,
+ol,
+ul
+{
+    @include font-size(14px);
+    margin:0 0 15px 0;
+    padding: 0 0 0 15px;
+}
+
+h1
+{
+    @include font-size(30px);
+    margin: 0 0 15px 0;
+    padding: 0;
+}
+
+h2
+{
+    @include font-size(20px);
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+h3
+{
+    @include font-size(16px);
+    margin: 0;
+    padding: 0 0 5px 0;
+}
+
+h4
+{
+    @include font-size(16px);
+    margin: 0;
+    padding: 0 0 5px 0;
+}
+
+h5
+{
+    @include font-size(14px);
+    margin: 0;
+    padding: 0;
+}
+
+h6
+{
+    @include font-size(14px);
+    margin: 0;
+    padding: 0;
+}
+
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection declarations have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection
+{
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection
+{
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr
+{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video
+{
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset
+{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea
+{
+    resize: vertical;
+}
+
+::-webkit-input-placeholder
+{
+   color:#5C5C5C;
+}
+
+:-moz-placeholder
+{ /* Firefox 18- */
+   color:#5C5C5C;
+}
+
+::-moz-placeholder
+{  /* Firefox 19+ */
+   color:#5C5C5C;
+}
+
+input:focus::-moz-placeholder
+{  /* Firefox 19+ */
+   color: transparent !important;
+}
+
+textarea:focus::-moz-placeholder
+{  /* Firefox 19+ */
+   color: transparent !important;
+}
+
+:-ms-input-placeholder
+{
+   color:#5C5C5C;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder
+{
+    opacity: 1;
+}

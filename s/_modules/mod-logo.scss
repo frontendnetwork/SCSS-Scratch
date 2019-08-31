@@ -1,0 +1,216 @@
+/* .mod-logo */
+.mod-logo
+{
+	margin: 0 auto;
+	display: block;
+
+	h1
+	{
+		font-family: 'Fjalla One', sans-serif;
+		font-weight: bold;
+		@include font-size(40px);
+		text-align: center;
+		padding: 5px 0 0px 0;
+		margin: 0;
+		color: #FFF;
+		transform: rotate(-4deg);
+		
+
+		@include mq(tablet){
+			@include font-size(60px);
+			letter-spacing: 15px;
+		}
+	}
+
+}
+
+.mod-section
+{
+	max-width: 100%;
+	margin: 0 auto;
+	padding: 90px;
+
+	@include mq(tablet){
+		width: 700px;
+	}
+}
+
+.m-first 
+{
+	background: #7f8c8d;
+	padding: 50px;
+}
+
+.m-second
+{
+	background: #ecf0f1;
+
+	h1
+	{
+		color: #7f8c8d;
+		text-align: center;
+		@include font-size(40px);
+		text-transform: uppercase;
+		font-weight: 700;
+		margin: 0;
+
+		@include mq(tablet){
+			@include font-size(65px);
+		}
+	}
+
+	p
+	{
+		text-align: center;
+		padding: 0;
+		@include font-size(50px);
+		color: #7f8c8d;
+	}
+
+	article
+	{
+		display: none;
+		padding-top: 15px;
+
+		p
+		{
+			@include font-size(15px);
+			text-align: justify;
+		}
+	}
+
+}
+
+.m-third
+{
+	background: #bdc3c7;
+
+	img
+	{
+		max-width: 100%;
+		display: block;
+		margin: 0 auto;
+		border: none;
+
+		@include mq(tablet){
+			height: 400px;
+			width: 400px;
+		}
+	}
+}
+
+.m-fourth
+{
+	background: #FFF;
+
+	h1
+	{
+		color: #9b59b6;
+		text-align: center;
+		@include font-size(30px);
+		text-transform: uppercase;
+		font-weight: 700;
+		margin: 0;
+
+		@include mq(tablet){
+			@include font-size(65px);
+		}
+	}
+
+	p
+	{
+		text-align: center;
+		padding: 0;
+		color: #9b59b6;
+		@include font-size(50px);
+	}
+
+	article
+	{
+		display: none;
+		padding-top: 15px;
+
+		p
+		{
+			@include font-size(15px);
+			text-align: justify;
+			color: #9b59b6;
+		}
+	}
+}
+
+.m-fifth
+{
+	background: #A3DFE7;
+
+	h1
+	{
+		color: #000;
+		text-align: center;
+		@include font-size(40px);
+		text-transform: uppercase;
+		font-weight: 700;
+		margin: 0;
+
+		@include mq(tablet){
+			@include font-size(65px);
+		}
+	}
+
+	p
+	{
+		text-align: center;
+		padding: 0;
+		@include font-size(30px);
+
+		@include mq(tablet){
+			@include font-size(50px);
+		}
+	}
+
+	article
+	{
+		padding-top: 15px;
+
+		p
+		{
+			@include font-size(15px);
+			text-align: justify;
+		}
+	}
+
+}
+
+.m-sixth
+{
+	background: #8e44ad;
+
+	h3
+	{
+		color: #FFF;
+		text-align: center;
+		@include font-size(20px);
+		text-transform: uppercase;
+		font-weight: 700;
+		margin: 0;
+	}
+
+	p
+	{
+		text-align: center;
+		padding: 0;
+		@include font-size(50px);
+	}
+
+	article
+	{
+		padding-top: 15px;
+
+		p
+		{
+			@include font-size(15px);
+			text-align: justify;
+		}
+	}
+
+}

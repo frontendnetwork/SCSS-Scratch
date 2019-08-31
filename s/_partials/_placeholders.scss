@@ -1,0 +1,19 @@
+/***************************************************************************
+* PLACEHOLDER
+***************************************************************************/
+
+
+%EXAMPLE-default-button {
+    @include font-size(16px);
+    color: #000000;
+    border: 0px solid #fff;
+    background: url("/_templates/dummies/button-arrow.png") 8px 7px no-repeat;
+    background-color: #f00;
+    padding: 6px 14px 5px 29px;
+    text-align: left;
+
+    &:hover {
+        background-color: #999;
+    }
+}
+
