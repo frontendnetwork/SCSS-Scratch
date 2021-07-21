@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'sans400';
+    src: url('../fonts/TheSans_B2_400_.eot');
+    src: url('../fonts/TheSans_B2_400_.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/TheSans_B2_400_.woff') format('woff'),
+         url('../fonts/TheSans_B2_400_.svg#sans400') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sans700';
+    src: url('../fonts/TheSans_B2_700_.eot');
+    src: url('../fonts/TheSans_B2_700_.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/TheSans_B2_700_.woff') format('woff'),
+         url('../fonts/TheSans_B2_700_.svg#sans700') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'serif600';
+    src: url('../fonts/TheSerif_600_.eot');
+    src: url('../fonts/TheSerif_600_.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/TheSerif_600_.woff') format('woff'),
+         url('../fonts/TheSerif_600_.svg#serif600') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
