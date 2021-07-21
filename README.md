@@ -2,7 +2,8 @@
 SCSS Scratch combines the idea of [barebones](https://github.com/nothingrandom/barebones) with SCSS and folders, which can be used for the structure of further projects.
 
 ### Instructions
-**Note:** This is **not** recommended for production use, as the folder-structure is adjusted to my private projects.
+**Note:** This is **not** recommended for production use, as the folder-structure is adjusted to my projects.
+
 
 Clone this repository with:
 
