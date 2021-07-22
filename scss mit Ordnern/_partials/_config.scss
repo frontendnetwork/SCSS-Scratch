@@ -1,6 +1,5 @@
 
 // project breakpoints
-// if changed also update HELPER.breakpoints in /_common/js/custom.js!
 $breakpoints: (
 	maxTablet: "only screen and (max-width: #{em(768px)})",
     tablet: "only screen and (min-width: #{em(768px)})",
