@@ -1,0 +1,19 @@
+// Import barebones scss structure
+@import '_globals/reset', '_globals/mixins', 'utilities', 'variables', 'colors', 'fonts', ;
+
+// If you need the FlexBoxGrid: Grid
+@import 'grid';
+
+html {
+  @include font-smoothing(on);
+  font-size: $base-font-size;
+}
+
+// Import typical layout sass modules
+@import "_partials/base";
+
+// YOUR STYLES HERE
+// ==============================
+
+// For anything quick and dirty that needs thrown in
+@import "shame"; 

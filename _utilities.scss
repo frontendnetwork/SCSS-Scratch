@@ -2,7 +2,6 @@
 
 // Fonts and Text
 // ==============================
-
 // font-smoothing
 // @param $value: Accepted values: [ON | off]
 @mixin font-smoothing($value: on) {
@@ -74,12 +73,10 @@
     font-weight: $weight;
     font-style: $style;
 
-    src: url('#{$file-path}.eot'); /* IE9 Compat Modes */
-    src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('#{$file-path}.woff2') format('woff2'), /* Super Modern Browsers */
-         url('#{$file-path}.woff') format('woff'), /* Pretty Modern Browsers */
-         url('#{$file-path}.ttf')  format('truetype'), /* Safari, Android, iOS */
-         url('#{$file-path}.svg##{$font-family}') format('svg'); /* Legacy iOS */
+    src: url('#{$file-path}.eot');
+    src: url('#{$file-path}.eot?#iefix') format('embedded-opentype'),
+    url('#{$file-path}.woff') format('woff'),
+    url('#{$file-path}.ttf') format('truetype');
   }
 }
 
@@ -109,54 +106,13 @@
 // selection
 // @param @content: Add styles for highlighted text
 @mixin selection {
-  ::-moz-selection {
+  &::-moz-selection {
     @content;
   }
 
-  ::-webkit-selection {
+  &::selection {
     @content;
   }
-
-  ::selection {
-    @content;
-  }
-}
-
-// header-style
-// @param @content: Add styles for header texts
-@mixin header-style {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  th {
-    @content;
-  }
-}
-
-// paragraph-style
-// @param @content: Add styles for paragraph texts
-@mixin paragraph-style {
-  p,
-  li,
-  td {
-    @content;
-  }
-}
-
-// line-clamp
-// cut text off after a certain number of lines, ending in ellipsis
-// @param $lines: maximum number of lines
-// @see https://dropshado.ws/post/1015351370/webkit-line-clamp
-@mixin line-clamp($lines: 2) {
-  display: -webkit-box;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-line-clamp: $lines;
-  -webkit-box-orient: vertical;
-  word-break: break-word;
 }
 
 // Layout
@@ -164,56 +120,24 @@
 
 // clearfix
 @mixin clearfix {
+  &::before,
   &::after {
     display: block;
     content: ' ';
+  }
+
+  &::after {
     clear: both;
   }
 }
 
 
-// columns
+// Columns
 @mixin columns($column-count: 2, $column-gap: 40px) {
   column-count: $column-count;
   column-gap: $column-gap;
 }
 
-// center
-// @param: define absolute [vertical / horizontal / both] centered position
-@mixin center($position) {
-  position: absolute;
-
-  @if $position == 'vertical' {
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-  }
-
-  @else if $position == 'horizontal' {
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translate(-50%);
-  }
-
-  @else if $position == 'both' {
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-}
-
-// pseudo
-// for use with ::before / ::after elements, as you always use these
-// @param $pos: Accepted values: [ABSOLUTE | relative | static | sticky | fixed]
-@mixin pseudo($content: '', $pos: absolute, $display: block) {
-  position: $pos;
-  display: $display;
-  content: $content;
-}
 
 // Device targetting
 // ==============================
@@ -271,16 +195,16 @@
 
 // Screen sizes
 // ==============================
-@mixin screen-min($min-width) {
+@mixin screen-max($max-width) {
   @media screen
-  and (min-width: $min-width) {
+  and (max-width: $max-width) {
     @content;
   }
 }
 
-@mixin screen-max($max-width) {
+@mixin screen-min($min-width) {
   @media screen
-  and (max-width: $max-width) {
+  and (min-width: $min-width) {
     @content;
   }
 }
@@ -301,8 +225,7 @@
   }
 }
 
-// breakpoint (for mobile first)
-// @param @content for everything that is arg (@see _variables) and up
+// Breakpoint Mixin
 @mixin breakpoint($min: 0, $max: 0) {
   $type: type-of($min);
 
@@ -332,15 +255,10 @@
         @content;
       }
     }
-    @else if $min == 'xlg' {
-      @include screen-min($screen-xlg) {
-        @content;
-      }
-    }
   }
 
   @else if $type == number {
-    @include screen-range($min, $max) {
+    @include device-range($min, $max) {
       @content;
     }
   }
@@ -349,9 +267,7 @@
 // Colors
 // ==============================
 
-// palette
-// @param $palette: Primary palette color as declared in _colors
-// @param $tone: Modifier of primary color, base by default
+// pallette
 // @see https://twitter.com/thecodezombie/status/595977653296996354/photo/1
 @function palette($palette, $tone: 'base') {
   @return map-get(map-get($palettes, $palette), $tone);
@@ -369,7 +285,7 @@
 // ==============================
 
 // hardware-acceleration
-// @param $value: Accepted values: [ON | off]
+// @param $value: Accepted values: [on | off]
 @mixin hardware-acceleration($value: on) {
   @if $value == on {
     transform: translate3d(0, 0, 0);
@@ -419,13 +335,4 @@
   border-top: 1px solid $color;
   margin: 1em 0;
   padding: 0;
-}
-
-// transition
-// simple ease in out transition with one line
-// @param $property: what css property to transition
-// @param $timing: what transition effect to use
-// @param $duration: how long the transition will last (see _variables)
-@mixin transition($property: all, $timing: ease-in-out, $duration: $transition-time, $delay: 0s) {
-  transition: $property $timing $duration $delay;
 }

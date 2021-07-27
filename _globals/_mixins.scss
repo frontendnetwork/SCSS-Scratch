@@ -1,7 +1,9 @@
 /* ==========================================================================
-   mixins and functions:  DO NOT CHANGE!  updated: 2015-08-27 (PeDo)
+   mixins and functions:  DO NOT CHANGE!  updated: 2021-07-27
    ========================================================================== */
 
+
+/* Setup: @include font-size(50px); and for media-queries @include mq(tablet){} */
 
 // converts several units to em (supports px, pt, pc, in, mm, cm)
 @function em($size) {
@@ -94,39 +96,3 @@
         @warn "Unknown breakpoint #{$type}!";
     }
 }
-
-
-/* Example
-.Example
-{
-    // mindestens 320px, wuerde automatisch in 20em umgerechnet werden
-    @include mq(320px) {
-        color: red;
-    }
-
-    // bleibt 20em, da keine umrechnung notwendig
-    @include mq(20em) {
-        color: red;
-    }
-
-    // identisch zu oben
-    @include mq($min: 320px) {
-        color: red;
-    }
-
-    // min 320px bis max 767px
-    @include mq(320px, 768px - 1px) {
-        color: blue;
-    }
-
-    // identisch zu oben
-    @include mq($min: 320px, $max: 768px - 1px) {
-        color: blue;
-    }
-
-    // maximal 768px
-    @include mq($max: 768px) {
-        color: green;
-    }
-}
-*/
