@@ -2,7 +2,7 @@
 @import '_globals/reset', '_globals/mixins', '_globals/utilities', '_globals/variables', '_globals/colors', '_globals/fonts';
 
 // If you need the FlexBoxGrid: Grid
-@import '_globals/grid';
+// @import '_globals/grid';
 
 html {
   @include font-smoothing(on);
