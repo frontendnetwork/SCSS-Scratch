@@ -1,9 +1,7 @@
 # SCSS Scratch
-SCSS Scratch combines the idea of [barebones](https://github.com/nothingrandom/barebones) with SCSS and folders, which can be used for the structure of further projects.
+SCSS Scratch is a Barebones-Structure/starting-point for bigger SASS-projects. 
 
-### Instructions
-**Note:** This is **not** recommended for production use, as the folder-structure is adjusted to my projects.
-
+## Instructions
 
 Clone this repository with:
 
@@ -13,5 +11,34 @@ or via HTTPS:
 
     gh repo clone jokenetwork/FT-Bootstrap-Theme
 
-### Usage
-Download the repository and use it within your SASS-Processor (*I'd reccommend PrePros*). 
+## Usage
+Download the repository and import it into your SASS-Processor (*I'd reccommend PrePros*). 
+
+
+### _globals
+
+In the `style.scss`-file, you'll find the follwoing config:
+
+
+    // Import barebones scss structure
+    @import '_globals/reset', '_globals/mixins', '_globals/utilities', '_globals/variables', '_globals/colors', '_globals/fonts';
+
+This includes an up-to-date version of `normalize.css` (`_globals/reset.scss`), mixins and functions (e.g. rem-calculation) (`_globals/mixins.scss`), utilities from `barebones.scss` (`_globals/utilities.scss`) and documents for variables, colors and fonts which are set for the whole page.
+
+### Flexbox Grid 
+
+If you need a flexbox-grid, you can uncomment the follwoing line:
+
+    // @import '_globals/grid';
+
+
+### Main Styles
+Do your main styling in the `main.scss`-file. It it imported with:
+
+    @import "main";
+
+### Shame
+For anything quick and dirty, which will be cleaned up later, you can use the `shame.scss` stylesheet. It it imported with:
+
+    @import "shame"
+
