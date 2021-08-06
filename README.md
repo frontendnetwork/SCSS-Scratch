@@ -41,4 +41,8 @@ Do your main styling in the `main.scss`-file. It it imported with:
 For anything quick and dirty, which will be cleaned up later, you can use the `shame.scss` stylesheet. It it imported with:
 
     @import "shame"
+   
+### _modules
+In `/_modules/mod-logo.scss` you'll find a file, which can be used as an example for how the included mixins and utilities are used.
+Please remove this file before processing.
 
