@@ -1,6 +1,8 @@
 # SCSS Scratch
 SCSS Scratch is a Barebones-Structure/starting-point for bigger SASS-projects. 
 
+[<img src="https://faq.jokenetwork.de/css/sponsor.png" alt="Sponsor" width="100">](https://github.com/sponsors/philipbrembeck)
+
 ## Instructions
 
 Clone this repository with:
