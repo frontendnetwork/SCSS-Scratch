@@ -1,4 +1,6 @@
 # SCSS Scratch
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FJokeNetwork%2FSCSS-Scratch.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FJokeNetwork%2FSCSS-Scratch?ref=badge_shield)
+
 SCSS Scratch is a Barebones-Structure/starting-point for bigger SASS-projects. 
 
 [<img src="https://faq.jokenetwork.de/css/sponsor.png" alt="Sponsor" width="100">](https://github.com/sponsors/philipbrembeck)
@@ -48,3 +50,7 @@ For anything quick and dirty, which will be cleaned up later, you can use the `s
 In `/_modules/mod-logo.scss` you'll find a file, which can be used as an example for how the included mixins and utilities are used.
 Please remove this file before processing.
 
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FJokeNetwork%2FSCSS-Scratch.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FJokeNetwork%2FSCSS-Scratch?ref=badge_large)
