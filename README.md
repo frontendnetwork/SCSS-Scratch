@@ -54,17 +54,6 @@ For anything quick and dirty, which will be cleaned up later, you can use the `s
 In `/_modules/mod-logo.scss` you'll find a file, which can be used as an example for how the included mixins and utilities are used.
 Please remove this file before processing.
 
-
-## ☑️ ToDo 
-
-Integrate: 
-
-* Open-source JavaScript-based scanner
-* Text search
-* Options for vegetarians
-* Sustainability assessment
-* Nutri-Score integration
-
 ## 👩‍⚖️ License
 
 All text and code in this repository is licensed under [MIT](https://github.com/JokeNetwork/SCSS-Scratch/blob/master/LICENSE).
