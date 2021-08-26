@@ -58,6 +58,8 @@ Please remove this file before processing.
 
 All text and code in this repository is licensed under [MIT](https://github.com/JokeNetwork/SCSS-Scratch/blob/master/LICENSE).
 
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FJokeNetwork%2FSCSS-Scratch.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FJokeNetwork%2FSCSS-Scratch?ref=badge_large)
+
 ## 🤝 Credits 
 
 * This repo will be further maintained by [@jokenetwork](https://github.com/jokenetwork) ([JokeNetwork.de](https://jokenetwork.de)) 
