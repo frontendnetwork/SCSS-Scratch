@@ -20,7 +20,7 @@ Download the repository and import it into your SASS-Processor or clone it:
 
 ### _globals
 
-In the `style.scss`-file, you'll find the follwoing config:
+In the `style.scss`-file, you'll find the following config:
 
 ````css
 // Import barebones scss structure
