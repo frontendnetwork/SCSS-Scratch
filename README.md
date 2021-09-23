@@ -27,7 +27,7 @@ In the `style.scss`-file, you'll find the follwoing config:
 @import '_globals/reset', '_globals/mixins', '_globals/utilities', '_globals/variables', '_globals/colors', '_globals/fonts';
 ```` 
 
-This includes an up-to-date version of `normalize.css` (`_globals/reset.scss`), mixins and functions (e.g. rem-calculation) (`_globals/mixins.scss`), utilities of `barebones.scss` (`_globals/utilities.scss`) and documents for variables, colors and fonts which are set for the whole page.
+This includes an up-to-date version of [`normalize.css`](https://necolas.github.io/normalize.css/) (`_globals/reset.scss`), mixins and functions (e.g. rem-calculation) (`_globals/mixins.scss`), utilities of `barebones.scss` (`_globals/utilities.scss`) and documents for variables, colors and fonts which are set for the whole page.
 
 ### Flexbox Grid 
 
@@ -63,5 +63,8 @@ All text and code in this repository is licensed under [MIT](https://github.com/
 
 ## 🤝 Credits 
 
-* This repo will be further maintained by [@jokenetwork](https://github.com/jokenetwork) ([JokeNetwork.de](https://jokenetwork.de)) 
-* Originally created by [@philipbrembeck](https://github.com/philipbrembeck)
+* Maintained by [@jokenetwork](https://github.com/jokenetwork) ([JokeNetwork.de](https://jokenetwork.de)) 
+* Created by [@philipbrembeck](https://github.com/philipbrembeck)
+* This repo includes the following open-source projects:
+	* [Normalize.css](https://necolas.github.io/normalize.css/)
+	* This is a fork & recreation of [barebones](https://github.com/nothingrandom/barebones)
