@@ -15,7 +15,7 @@
 ## 👨🏼‍💻 Usage
 Download the repository and import it into your SASS-Processor or clone it:
 
-    git clone https://github.com/philipbrembeck/FT-Bootstrap-Theme.git
+    git clone https://github.com/JokeNetwork/FT-Bootstrap-Theme.git
 
 
 ### _globals
