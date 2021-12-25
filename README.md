@@ -57,7 +57,7 @@ Please remove this file before processing.
 
 ## 👩‍⚖️ License
 
-All text and code in this repository is licensed under [WTFPL](https://github.com/JokeNetwork/SCSS-Scratch/blob/master/LICENSE).
+All text and code in this repository is licensed under [WTFPL](https://github.com/JokeNetwork/SCSS-Scratch/blob/master/LICENSE) (Excluding the below mentioned `normalize.css`, licensed under MIT!).
 
 [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FJokeNetwork%2FSCSS-Scratch.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FJokeNetwork%2FSCSS-Scratch?ref=badge_large)
 
