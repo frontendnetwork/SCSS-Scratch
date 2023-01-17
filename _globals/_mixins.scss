@@ -1,5 +1,5 @@
 /* ==========================================================================
-   mixins and functions:  DO NOT CHANGE!  updated: 2021-07-27
+   mixins and functions:  DO NOT CHANGE!  updated: 2023-01-17
    ========================================================================== */
 
 
@@ -74,25 +74,20 @@
 }
 
 // MEDIA QUERY Mixin
-@mixin mq($type) {
-    @if map-has-key($breakpoints, $type) {
-        @media #{map-get($breakpoints, $type)} {
-            @content;
-        }
-
-        // duplicate style for ie8
-        @if index($breakpoints-ie8, $type) {
-            @if & {
-                .lt-ie9 & {
-                    @content;
-                }
-            } @else {
-                .lt-ie9 {
-                    @content;
-                }
-            }
-        }
-    } @else {
-        @warn "Unknown breakpoint #{$type}!";
-    }
+@mixin mq($size) {
+  @if $size == phone {
+    @media (max-width:48rem) { @content; }
+  }
+  @else if $size == s-tablet {
+    @media (max-width:50rem) { @content; }
+  } 
+  @else if $size == tablet {
+    @media (max-width:64rem) { @content; }
+  } 
+  @else if $size == s-desktop {
+    @media (max-width:104rem) { @content; }
+  }
+  @else if $size == desktop {
+    @media (min-width:75rem) { @content; }
+  }
 }
