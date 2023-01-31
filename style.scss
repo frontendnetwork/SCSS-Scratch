@@ -1,5 +1,5 @@
 // Import barebones scss structure
-@import '_globals/reset', '_globals/mixins', '_globals/utilities', '_globals/variables', '_globals/colors', '_globals/fonts';
+@use '_globals/reset', '_globals/mixins', '_globals/utilities', '_globals/variables', '_globals/colors', '_globals/fonts';
 
 // If you need the FlexBoxGrid: Grid
 // @import '_globals/grid';
@@ -10,7 +10,7 @@ html {
 }
 
 // Import the main stylesheet 
-@import "main";
+@use "main";
 
 // For anything quick and dirty that needs thrown in
-@import "shame"
+@use "shame"
