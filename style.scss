@@ -1,16 +1,17 @@
 // Import barebones scss structure
-@use '_globals/reset', '_globals/mixins', '_globals/utilities', '_globals/variables', '_globals/colors', '_globals/fonts';
-
-// If you need the FlexBoxGrid: Grid
-// @import '_globals/grid';
+@use '_globals/reset';
+@use '_globals/mixins';
+@use '_globals/utilities' as *;
+@use '_globals/variables' as *;
+@use '_globals/colors';
+@use '_globals/fonts';
+@use "main";
+@use "shame";
 
 html {
   @include font-smoothing(on);
   font-size: $base-font-size;
 }
 
-// Import the main stylesheet 
-@use "main";
-
-// For anything quick and dirty that needs thrown in
-@use "shame"
+// If you need  FlexBox / Grid
+// @use '_globals/grid';

@@ -1,54 +1,45 @@
 /* ==========================================================================
-   mixins and functions:  DO NOT CHANGE!  updated: 2023-01-17
+   mixins and functions:  DO NOT CHANGE!  updated: 2023-02-01
    ========================================================================== */
 
-
-/* Setup: @include font-size(50px); and for media-queries @include mq(tablet){} */
-
-// converts several units to em (supports px, pt, pc, in, mm, cm)
+/* converts several units to em (supports px, pt, pc, in, mm, cm) */
 @function em($size) {
     @if not unitless($size) {
         @if unit($size) == em {
             @return $size;
         }
 
-        @return ((0px + $size) / 16px * 1em);
+        @return calc(((0px + $size) / 16px * 1em));
     }
 
     @return null;
 }
 
-// converts several units to rem (supports px, pt, pc, in, mm, cm)
+/* converts several units to rem (supports px, pt, pc, in, mm, cm) */
 @function rem($size) {
-    $size: em($size);
-
-    @if $size {
-        @return em($size) / 1em + rem;
-    }
-
-    @return null;
+    @return calc($size / 16px * 1rem);
 }
 
-// FONT SIZE MIXIN for rem
+/* FONT SIZE MIXIN for rem */
 @mixin font-size($size) {
     font-size: $size;
     font-size: rem($size);
 }
 
-// responsive img, max-width
+/* responsive img, max-width */
 @mixin img($max-width) {
     max-width: $max-width;
     width: 100%;
     height: auto;
 }
 
-// LINE HEIGHT MIXIN for rem
+/* LINE HEIGHT MIXIN for rem */
 @mixin line-height($size) {
     line-height: $size;
     line-height: rem($size);
 }
 
-// POSITIONING MIXIN for absolute positioned elements
+/* POSITIONING MIXIN for absolute positioned elements */
 @mixin absolute($top: null, $right: null, $bottom: null, $left: null) {
     top: $top;
     left: $left;
@@ -57,23 +48,16 @@
     position: absolute;
 }
 
-// SEMI-TRANSPARENT BACKGROUND with old IE fallback
+/* SEMI-TRANSPARENT BACKGROUND with old IE fallback */
 @mixin background-color($color) {
     @if opacity($color) < 1 {
         background-color: opacify($color, 1);
     }
 
     background-color: $color;
-
-    //@if opacity($color) < 1 {
-    //    .no-rgba & {
-    //        // IE6-9
-    //        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#{ie-hex-str($color)}, endColorstr=#{ie-hex-str($color)});
-    //    }
-    //}
 }
 
-// MEDIA QUERY Mixin
+/* MEDIA QUERY Mixin */
 @mixin mq($size) {
   @if $size == phone {
     @media (max-width:48rem) { @content; }

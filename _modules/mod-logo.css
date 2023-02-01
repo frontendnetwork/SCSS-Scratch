@@ -1,0 +1,214 @@
+/* ==========================================================================
+   mixins and functions:  DO NOT CHANGE!  updated: 2023-02-01
+   ========================================================================== */
+/* converts several units to em (supports px, pt, pc, in, mm, cm) */
+/* converts several units to rem (supports px, pt, pc, in, mm, cm) */
+/* FONT SIZE MIXIN for rem */
+/* responsive img, max-width */
+/* LINE HEIGHT MIXIN for rem */
+/* POSITIONING MIXIN for absolute positioned elements */
+/* SEMI-TRANSPARENT BACKGROUND with old IE fallback */
+/* MEDIA QUERY Mixin */
+/* .mod-logo */
+/*! 
+ * IMPORTANT NOTICE: This is an example on how to use modules in SCSS-Scratch. 
+ * Please delete this file before processing 
+ * 
+!*/
+.mod-logo {
+  margin: 0 auto;
+  display: block;
+}
+.mod-logo h1 {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 5px 0 0;
+  margin: 0;
+  color: #FFF;
+  -webkit-transform: rotate(-4deg);
+          transform: rotate(-4deg);
+}
+@media (max-width: 64rem) {
+  .mod-logo h1 {
+    font-size: 60px;
+    font-size: 3.75rem;
+    letter-spacing: 15px;
+  }
+}
+@media (max-width: 48rem) {
+  .mod-logo h1 {
+    color: #000;
+  }
+}
+
+.mod-section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 90px;
+}
+@media (max-width: 64rem) {
+  .mod-section {
+    width: 700px;
+  }
+}
+
+.m-first {
+  background: #7f8c8d;
+  padding: 50px;
+}
+
+.m-second {
+  background: #ecf0f1;
+}
+.m-second h1 {
+  color: #7f8c8d;
+  text-align: center;
+  font-size: 40px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+}
+@media (max-width: 64rem) {
+  .m-second h1 {
+    font-size: 65px;
+    font-size: 4.0625rem;
+  }
+}
+.m-second p {
+  text-align: center;
+  padding: 0;
+  font-size: 50px;
+  font-size: 3.125rem;
+  color: #7f8c8d;
+}
+.m-second article {
+  display: none;
+  padding-top: 15px;
+}
+.m-second article p {
+  font-size: 15px;
+  font-size: 0.9375rem;
+  text-align: justify;
+}
+
+.m-third {
+  background: #bdc3c7;
+}
+.m-third img {
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
+  border: none;
+}
+@media (max-width: 64rem) {
+  .m-third img {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+.m-fourth {
+  background: #FFF;
+}
+.m-fourth h1 {
+  color: #9b59b6;
+  text-align: center;
+  font-size: 30px;
+  font-size: 1.875rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+}
+@media (max-width: 64rem) {
+  .m-fourth h1 {
+    font-size: 65px;
+    font-size: 4.0625rem;
+  }
+}
+.m-fourth p {
+  text-align: center;
+  padding: 0;
+  color: #9b59b6;
+  font-size: 50px;
+  font-size: 3.125rem;
+}
+.m-fourth article {
+  display: none;
+  padding-top: 15px;
+}
+.m-fourth article p {
+  font-size: 15px;
+  font-size: 0.9375rem;
+  text-align: justify;
+  color: #9b59b6;
+}
+
+.m-fifth {
+  background: #A3DFE7;
+}
+.m-fifth h1 {
+  color: #000;
+  text-align: center;
+  font-size: 40px;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+}
+@media (max-width: 64rem) {
+  .m-fifth h1 {
+    font-size: 65px;
+    font-size: 4.0625rem;
+  }
+}
+.m-fifth p {
+  text-align: center;
+  padding: 0;
+  font-size: 30px;
+  font-size: 1.875rem;
+}
+@media (max-width: 64rem) {
+  .m-fifth p {
+    font-size: 50px;
+    font-size: 3.125rem;
+  }
+}
+.m-fifth article {
+  padding-top: 15px;
+}
+.m-fifth article p {
+  font-size: 15px;
+  font-size: 0.9375rem;
+  text-align: justify;
+}
+
+.m-sixth {
+  background: #8e44ad;
+}
+.m-sixth h3 {
+  color: #FFF;
+  text-align: center;
+  font-size: 20px;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0;
+}
+.m-sixth p {
+  text-align: center;
+  padding: 0;
+  font-size: 50px;
+  font-size: 3.125rem;
+}
+.m-sixth article {
+  padding-top: 15px;
+}
+.m-sixth article p {
+  font-size: 15px;
+  font-size: 0.9375rem;
+  text-align: justify;
+}

@@ -1,8 +1,10 @@
+@use '../_globals/mixins' as *;
 /* .mod-logo */
 /*! 
  * IMPORTANT NOTICE: This is an example on how to use modules in SCSS-Scratch. 
  * Please delete this file before processing 
- * !*/
+ * 
+!*/
 
 .mod-logo
 {
@@ -24,6 +26,10 @@
 		@include mq(tablet){
 			@include font-size(60px);
 			letter-spacing: 15px;
+		}
+
+		@include mq(phone) {
+			color: #000;
 		}
 	}
 
