@@ -4,15 +4,6 @@
 # SCSS Scratch
 
 SCSS Scratch is a barebones structure/starting-point for SCSS-projects.
-
-<p align="center">
- <a href="https://app.fossa.com/projects/git%2Bgithub.com%2FJokeNetwork%2FSCSS-Scratch?ref=badge_small" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2FJokeNetwork%2FSCSS-Scratch.svg?type=small"/></a>
-	<a href="https://jokenetwork.de/badges"><img alt="Status: Active" src="https://jokenetwork.de/assets/img/gitstatus/active.svg"></a>
-  <a href="https://app.fossa.com/projects/git%2Bgithub.com%2FJokeNetwork%2FSCSS-Scratch?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2FJokeNetwork%2FSCSS-Scratch.svg?type=shield"/></a>
-	<a href="https://www.codacy.com/gh/JokeNetwork/SCSS-Scratch/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=JokeNetwork/SCSS-Scratch&amp;utm_campaign=Badge_Grade"><img src="https://app.codacy.com/project/badge/Grade/2f8a039d854a4a3ca857ecede388bfea"/></a>
-	<a href="https://github.com/sponsors/philipbrembeck"><img src="https://img.shields.io/badge/Sponsor-white.svg?logo=githubsponsors" alt="Consider Sponsoring"></a>
-	<a href="https://www.paypal.com/donate?hosted_button_id=N4F7DAQH7ET2G"><img src="https://img.shields.io/badge/Donate-blue.svg?logo=paypal" alt="Donate"></a>
-  </p>
   
 <br />
 
