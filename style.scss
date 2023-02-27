@@ -1,5 +1,5 @@
 // Import barebones scss structure
-@use '_globals/reset';
+@use "node_modules/minireset.css/minireset";
 @use '_globals/mixins';
 @use '_globals/utilities' as *;
 @use '_globals/variables' as *;

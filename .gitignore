@@ -2,3 +2,4 @@
 .contents
 style.css
 prepros.config
+node_modules/

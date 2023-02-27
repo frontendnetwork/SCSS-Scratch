@@ -1,0 +1,7 @@
+{
+  "name": "scssscratch",
+  "version": "1.0.1",
+  "dependencies": {
+    "minireset.css": "0.0.7"
+  }
+}
