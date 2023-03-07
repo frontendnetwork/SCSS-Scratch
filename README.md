@@ -79,6 +79,5 @@ All text and code in this repository is licensed under [WTFPL](https://github.co
 
 ## 🤝 Credits 
 
-* Maintained by [@jokenetwork](https://github.com/jokenetwork) ([JokeNetwork.de](https://jokenetwork.de)) 
 * Created by [@philipbrembeck](https://github.com/philipbrembeck)
 * This is a fork & recreation of [barebones](https://github.com/nothingrandom/barebones)
