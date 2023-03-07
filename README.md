@@ -18,7 +18,7 @@ SCSS Scratch is a barebones structure/starting-point for SCSS-projects.
 Download the repository and import it into your SASS-Processor or clone it:
 
 ````bash
-git clone https://github.com/JokeNetwork/SCSS-Scratch
+git clone https://github.com/FrontEndNetWork/SCSS-Scratch
 ````
 Then run:
 ````bash
