@@ -55,7 +55,7 @@ If you need a flexbox-grid, you can uncomment the follwoing line:
 // @use '_globals/grid';
 ````
 
-###ä Main Styles
+#### Main Styles
 Do your main styling in the `main.scss`-file. It it imported with:
 
 ````css
